@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Basics</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    h1 { color: #4CAF50; }
+    pre { background: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+  </style>
+</head>
+<body>
+  <h1>JavaScript: Arrays, Objects, Loops, Functions</h1>
+  <h2>Check the Console for Results</h2>
+  <p>Open the browser console (Ctrl + Shift + I) to see the output.</p>
+  
+  <script>
+    // **1. Arrays and Objects**
+
+    // Array Example
+    let fruits = ['Apple', 'Banana', 'Grapes'];
+    console.log('📌 Array Example:');
+    console.log(fruits);
+    console.log('First fruit:', fruits[0]);
+
+    // Object Example
+    let person = {
+      name: 'Ali',
+      age: 25,
+      city: 'Amman'
+    };
+    console.log('📌 Object Example:');
+    console.log(person);
+    console.log('Person name:', person.name);
+
+    // **2. typeof Operator**
+    console.log('📌 typeof Operator:');
+    console.log(typeof 42); // number
+    console.log(typeof 'Hello'); // string
+    console.log(typeof true); // boolean
+    console.log(typeof person); // object
+
+    // **3. Loops**
+
+    // for Loop
+    console.log('📌 for Loop:');
+    for (let i = 0; i < 3; i++) {
+      console.log('Iteration:', i);
+    }
+
+    // for...in Loop (for Objects)
+    console.log('📌 for...in Loop:');
+    for (let key in person) {
+      console.log(key + ': ' + person[key]);
+    }
+
+    // for...of Loop (for Arrays)
+    console.log('📌 for...of Loop:');
+    for (let fruit of fruits) {
+      console.log('Fruit:', fruit);
+    }
+
+    // while Loop
+    console.log('📌 while Loop:');
+    let count = 0;
+    while (count < 3) {
+      console.log('Count:', count);
+      count++;
+    }
+
+    // **4. continue and break**
+
+    console.log('📌 continue and break:');
+    for (let i = 0; i < 5; i++) {
+      if (i === 2) {
+        console.log('Skipping 2 with continue');
+        continue;
+      }
+      if (i === 4) {
+        console.log('Breaking at 4 with break');
+        break;
+      }
+      console.log(i);
+    }
+
+    // **5. Functions**
+
+    // Traditional Function
+    function greet(name) {
+      return `Hello, ${name}!`;
+    }
+    console.log('📌 Traditional Function:');
+    console.log(greet('Ali'));
+
+    // Function Expression
+    const add = function(a, b) {
+      return a + b;
+    };
+    console.log('📌 Function Expression:');
+    console.log('5 + 3 =', add(5, 3));
+
+    // Arrow Function
+    const multiply = (a, b) => a * b;
+    console.log('📌 Arrow Function:');
+    console.log('2 × 3 =', multiply(2, 3));
+  </script>
+</body>
+</html>
