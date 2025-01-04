@@ -114,16 +114,18 @@ console.log(smallerNubmer(4, 5, 6));
 function longerString(w1, w2, w3, w4, w5) {
     var words = [w1, w2, w3, w4, w5];
     var max = w1.length;
+    var lWord;
     for (let i = 0; i < words.length; i++) {
-        if (words[i + 1].length > words[i].length)
-            max = words[i + 1].length;
-        
+        if (words[i].length > max){
+            max = words[i].length;
+            lWord = words[i];
+        }
 
     }
-    return max;
+    return max , lWord;
 }
 
-console.log(longerString('wgee', 'wewgggefs', 'sdsdffsf', 'sdgsdgsdg', 'sdgsdsdg'));
+console.log(longerString('wgee', 'wewgggggggggefs', 'sdsdfghdfghfghfghffsf', 'sdgsdgsdg', 'sdgsdsdg'));
 
 
 
