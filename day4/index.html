@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function oddEvenFinder(n1, n2) {
+        //     let evenCount = 0;
+        //     let oddCount = 0;
+        //     for (let i = n1; i <= n2; i++) {
+        //         if (i % 2 == 0) {
+
+        //             evenCount = evenCount + i;
+
+        //         }
+
+        //         if (i % 2 != 0)
+        //             oddCount = oddCount + i;
+
+
+        //     }
+        //     console.log(evenCount);
+        //     console.log(oddCount);
+
+
+        // }
+        // oddEvenFinder(10, 20)
+
+        // function maximum(n1, n2, n3) {
+        //     if (n1 > n2 && n1 > n3)
+        //         return n1
+        //     if (n2 > n1 && n2 > n3)
+        //         return n2
+        //     if (n3 > n1 && n3 > n2)
+        //         return n3
+        // }
+
+        // console.log(maximum(5,7,9));
+        
+
+        // Using localStorage
+    localStorage.setItem('username', 'JohnDoe'); // Store data
+    const storedUsername = localStorage.getItem('username'); // Retrieve data
+    console.log('localStorage username:', storedUsername); // Output: JohnDoe
+
+    // Using sessionStorage
+    sessionStorage.setItem('theme', 'dark'); // Store data
+    const storedTheme = sessionStorage.getItem('theme'); // Retrieve data
+    console.log('sessionStorage theme:', storedTheme); // Output: dark
+
+    // Removing data
+    localStorage.removeItem('username'); // Remove specific item from localStorage
+    sessionStorage.clear(); // Clear all data from sessionStorage
+    </script>
+</body>
+
+</html>

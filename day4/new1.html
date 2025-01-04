@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>مثال على localStorage</title>
+</head>
+<body>
+    <h1>تخزين واسترجاع البيانات باستخدام localStorage</h1>
+    <input type="text" id="userName" placeholder="أدخل اسمك" />
+    <button onclick="saveData()">احفظ البيانات</button>
+    <button onclick="showData()">عرض البيانات</button>
+    <button onclick="clearData()">مسح البيانات</button>
+
+    <script>
+        function saveData() {
+            let name = document.getElementById("userName").value;
+            localStorage.setItem('name', name);
+            alert("تم حفظ الاسم: " + name);
+        }
+
+        function showData() {
+            let name = localStorage.getItem('name');
+            if (name) {
+                alert("الاسم المخزن هو: " + name);
+            } else {
+                alert("لا توجد بيانات مخزنة.");
+            }
+        }
+
+        function clearData() {
+            localStorage.clear();
+            alert("تم مسح جميع البيانات المخزنة.");
+        }
+    </script>
+</body>
+</html>

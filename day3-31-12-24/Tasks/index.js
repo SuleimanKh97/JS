@@ -24,25 +24,25 @@ const fontFamily = document.getElementById("fontFamily");
 
 Bold.addEventListener("change", () => {
     if (Bold.checked) {
-        spaceForYou.style.fontWeight = "bold"; // Change to your desired font size
+        spaceForYou.style.fontWeight = "bold"; 
     } else {
-        spaceForYou.style.fontWeight = "lighter"; // Reset to default font size
+        spaceForYou.style.fontWeight = "lighter"; 
     }
 });
 
 Italic.addEventListener("change", () => {
     if (Italic.checked) {
-        spaceForYou.style.fontStyle = "italic"; // Change to your desired font size
+        spaceForYou.style.fontStyle = "italic"; 
     } else {
-        spaceForYou.style.fontStyle = "normal"; // Reset to default font size
+        spaceForYou.style.fontStyle = "normal"; 
     }
 });
 
 Underline.addEventListener("change", () => {
     if (Underline.checked) {
-        spaceForYou.style.textDecoration = "underline"; // Change to your desired font size
+        spaceForYou.style.textDecoration = "underline"; 
     } else {
-        spaceForYou.style.textDecoration = "none"; // Reset to default font size
+        spaceForYou.style.textDecoration = "none";
     }
 });
 

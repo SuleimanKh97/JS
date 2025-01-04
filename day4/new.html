@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>مثال على sessionStorage</title>
+</head>
+<body>
+    <h1>تخزين واسترجاع البيانات باستخدام sessionStorage</h1>
+    <button onclick="saveData()">احفظ البيانات</button>
+    <button onclick="showData()">عرض البيانات</button>
+    <button onclick="clearData()">مسح البيانات</button>
+
+    <script>
+        function saveData() {
+            let name = prompt("أدخل اسمك:");
+            sessionStorage.setItem('name', name);
+            alert("تم حفظ الاسم: " + name);
+        }
+
+        function showData() {
+            let name = sessionStorage.getItem('name');
+            if (name) {
+                alert("الاسم المخزن هو: " + name);
+            } else {
+                alert("لا توجد بيانات مخزنة.");
+            }
+        }
+        function clearData() {
+            sessionStorage.clear();
+            alert("تم مسح جميع البيانات المخزنة.");
+        }
+    </script>
+</body>
+</html>
